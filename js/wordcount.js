@@ -5,7 +5,98 @@ angular
 
     $scope.output = "";
 
+    $scope.wordCount = "";
+
     let names = ["narendra", "modi", "rahul", "gandhi"];
+
+let question = [
+  "where",
+  "which",
+  "what",
+  "how",
+  "why",
+  "whose",
+  "when",
+  "who",
+  "whom"    
+];
+
+    let pronouns = [
+      "i",
+"me",
+"you",
+"he",
+"him",
+"she",
+"her",
+"it",
+"we",
+"us",
+"you",
+"they",
+"them",
+"this",
+"that",
+"these",
+"those",
+"mine",
+"yours",
+"his",
+"hers",
+"ours",
+"yours",
+"theirs",
+"who",
+"whom",
+"what",
+"which",
+"whose",
+"another",
+"anybody",
+"anyone",
+"anything",
+"each",
+"either",
+"enough",
+"everybody",
+"everyone",
+"everything",
+"less",
+"little",
+"much",
+"neither",
+"nobody",
+"noone",
+"nothing",
+"one",
+"other",
+"somebody",
+"someone",
+"something",
+"you",
+"both",
+"few",
+"fewer",
+"many",
+"others",
+"several",
+"they",
+"all",
+"any",
+"more",
+"most",
+"none",
+"some",
+"such",
+"myself",
+"yourself",
+"himself",
+"herself",
+"itself",
+"ourselves",
+"yourselves",
+"themselves"
+    ];
 
     let companies = [
       "ibm",
@@ -229,11 +320,16 @@ angular
       result = removeStringsFromArray(result, animals);
       result = removeStringsFromArray(result, companies);
       result = removeStringsFromArray(result, numbers);
+      result = removeStringsFromArray(result, question);
+      result = removeStringsFromArray(result, pronouns);
+
+      
       
       
       // result = removeStringsFromArray(result, words2);
       // result = removeStringsFromArray(result, words3);
 
       $scope.output = result;
+      $scope.wordCount = result.length();
     };
   });
