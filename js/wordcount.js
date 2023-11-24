@@ -33,6 +33,9 @@ let question = [
 ];
 
 let relations = [
+  "relation",
+  "relationship",
+  "relationships",
   "boyfriend",
   "boyfriends",
   "girlfriend",
@@ -47,7 +50,10 @@ let relations = [
   "males",
   "female",
   "females",
-  "people"
+  "people",
+  "friend",
+  "friends",
+  "dating"
 ]; 
 
     let pronouns = [
@@ -125,7 +131,8 @@ let relations = [
 "ourselves",
 "yourselves",
 "themselves",
-"theyre"
+"theyre",
+"theyve"
     ];
 
     let companies = [
@@ -143,6 +150,8 @@ let relations = [
     ];
 
     let numbers = [
+      "single",
+      "plural",
       "first",
 "second",
 "third",
