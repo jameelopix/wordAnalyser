@@ -366,14 +366,16 @@ let relations = [
 
       
       let resultSplit = result.split(" ");
-const finalWordList = [...new Set(resultSplit)];
+let finalWordList = [...new Set(resultSplit)];
+
+finalWordList.remove("");
 
 // console.log(uniqueWordsArray);
       
       // result = removeStringsFromArray(result, words2);
       // result = removeStringsFromArray(result, words3);
 
-      $scope.output = finalWordList;
+      $scope.output = finalWordList.join(" ");
       // $scope.wordCount = result.split(' ').length;
       $scope.wordCount = finalWordList.length;
     };
