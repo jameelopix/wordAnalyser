@@ -368,8 +368,6 @@ let relations = [
       let resultSplit = result.split(" ");
 let finalWordList = [...new Set(resultSplit)];
 
-finalWordList.remove("");
-
 // console.log(uniqueWordsArray);
       
       // result = removeStringsFromArray(result, words2);
