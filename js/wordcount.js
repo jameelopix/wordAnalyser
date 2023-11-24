@@ -9,6 +9,17 @@ angular
 
     let names = ["narendra", "modi", "rahul", "gandhi"];
 
+    let joiningWords = [
+      "and",
+      "or",
+      "because",
+      "before",
+      "behind",
+      "not",
+      "beside",
+      "besides"
+    ];
+
 let question = [
   "where",
   "which",
@@ -20,6 +31,24 @@ let question = [
   "who",
   "whom"    
 ];
+
+let relations = [
+  "boyfriend",
+  "boyfriends",
+  "girlfriend",
+  "girlfriends",
+  "dad",
+  "daddy",
+  "father",
+  "mom",
+  "mommy",
+  "mother",
+  "male",
+  "males",
+  "female",
+  "females",
+  "people"
+]; 
 
     let pronouns = [
       "i",
@@ -95,7 +124,8 @@ let question = [
 "itself",
 "ourselves",
 "yourselves",
-"themselves"
+"themselves",
+"theyre"
     ];
 
     let companies = [
@@ -322,6 +352,8 @@ let question = [
       result = removeStringsFromArray(result, numbers);
       result = removeStringsFromArray(result, question);
       result = removeStringsFromArray(result, pronouns);
+      result = removeStringsFromArray(result, relations);
+      result = removeStringsFromArray(result, joiningWords);
 
       
       
@@ -330,6 +362,6 @@ let question = [
       // result = removeStringsFromArray(result, words3);
 
       $scope.output = result;
-      $scope.wordCount = result.length();
+      $scope.wordCount = result.split(' ').length;
     };
   });
