@@ -17,7 +17,12 @@
       Word Counter : <h2>{{wordCount}}</h2>
 
       All Words
-      <h1>{{output}}</h1>
+      <!--
+	  <h1>{{output}}</h1>
+	  -->
+	  <ol>
+        <li ng-repeat="item in finalWordList">{{ item }}</li>
+      </ol>
     </div>
   </body>
 </html>
