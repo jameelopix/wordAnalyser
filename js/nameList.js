@@ -1,0 +1,22 @@
+export const names = [
+    "narendra",
+    "modi",
+    "rahul",
+    "gandhi",
+    "jacquelyn",
+    "carter",
+    "candace",
+    "cunningham",
+    "david",
+    "kelly",
+    "janet",
+    "furlow",
+    "ellie",
+    "callahan",
+    "venkat",
+    "stephen",
+    "james",
+    "charles",
+    "antony",
+    "richard"
+];

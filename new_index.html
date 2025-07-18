@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>-->
+
+
+
+<!--    <script src="js/wordcount.js"></script>-->
+
+
+<!--    <script>-->
+<!--      document.addEventListener('alpine:init', () => {-->
+
+<!--        console.log("Inside module files - darkmode...");-->
+<!--        Alpine.store('darkMode', {-->
+<!--          on: false,-->
+
+<!--          toggle() {-->
+<!--            this.on = ! this.on-->
+<!--          }-->
+<!--        })-->
+<!--      })-->
+<!--    </script>-->
+<!--    <script>-->
+<!--      import { names } from './js/nameList.js';-->
+
+<!--      console.log("Inside module files...");-->
+
+<!--      document.addEventListener('alpine:init', () => {-->
+
+<!--        console.log("Inside html files...");-->
+<!--        // Alpine.store('config', {-->
+<!--        //   appName: 'My Alpine App'-->
+<!--        // });-->
+
+<!--        Alpine.store('wordList', {-->
+<!--          appName: "JApplabs",-->
+<!--          names111: names-->
+<!--        });-->
+<!--      });-->
+<!--    </script>-->
+  </head>
+  <body>
+<!--    <div ng-controller="wordCounterController">-->
+<!--      <label>Input</label>-->
+<!--      <br />-->
+<!--      <textarea ng-model="input" rows="20" cols="75" ng-change="processInput()">-->
+<!--      </textarea>-->
+<!--      <hr />-->
+<!--      Word Counter : <h2>{{wordCount}}</h2>-->
+
+<!--      All Words-->
+<!--	  <ol>-->
+<!--        <li ng-repeat="item in finalWordList">{{ item }}</li>-->
+<!--      </ol>-->
+<!--    </div>-->
+
+<!--<h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>-->
+
+<!--<div x-data="{ count: 0 }">-->
+<!--  <button x-on:click="count++">Increment</button>-->
+
+<!--  <span x-text="count"></span>-->
+<!--</div>-->
+
+
+<!--<div x-data="{ message: '' }" class="p-4">-->
+
+<!--   Textarea input -->
+<!--  <label for="input" class="block mb-2 font-bold">Enter your message:</label>-->
+<!--  <textarea id="input" x-model="message" rows="4" cols="50" class="border p-2 w-full"></textarea>-->
+
+<!--   Display output -->
+<!--  <div class="mt-4">-->
+<!--    <strong>Output:</strong>-->
+<!--    <div class="mt-2 p-2 border bg-gray-100" x-text="message"></div>-->
+<!--  </div>-->
+
+
+<!--</div>-->
+
+
+<div x-data="wordList"  class="p-4">
+  <h1 class="text-xl font-bold">App Name:</h1>
+<!--      <p class="mt-2 text-lg" x-text="names"></p>-->
+
+  <p class="mt-2 text-lg" x-text="conjunctions"></p>
+
+
+<!--      <p class="mt-2 text-lg" x-text="$store.wordList.names111"></p>-->
+<!--  <p class="mt-2 text-lg" x-text="$store.wordList.appName"></p>-->
+<!--  <p class="mt-2 text-lg" x-text="JSON.stringify($store)"></p>-->
+</div>
+
+<!--<div x-data :class="$store.darkMode.on">ssssssssssssssssssssssss</div>-->
+<!--<button x-data @click="$store.darkMode.toggle()">Toggle Dark Mode</button>-->
+
+<script type="module" src="js/main.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </body>
+</html>
